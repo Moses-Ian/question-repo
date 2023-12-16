@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>Question Repo</title>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+</head>
+
+<body>
+	<div>
+		<label>Satellite Image</label>
+		<img id="satelliteImage" src="example.png" />
+	</div>
+	<div>
+		<label>Map Image, AI Trained on CPU</label>
+		<canvas id='cpu'></canvas>
+	</div>
+	<div>
+		<label>Map Image, AI Trained on GPU</label>
+		<canvas id='gpu'></canvas>
+	</div>
+	<script src='model.js'></script>
+</body>
+
+</html>
