@@ -11,17 +11,18 @@
 </head>
 
 <body>
+	<p>The Google Colab Notebook used to train the AI is <a href='https://colab.research.google.com/drive/13UkkX4txs-9_c9vswORxs5gS5S7erxws?usp=sharing'>here</a>. This link has edit permissions.</p>
 	<div>
 		<label>Satellite Image</label>
 		<img id="satelliteImage" src="example.png" />
 	</div>
 	<div>
 		<label>Map Image, AI Trained on CPU</label>
-		<canvas id='cpu'></canvas>
+		<canvas id='cpu' width='256px' height='256px'></canvas>
 	</div>
 	<div>
 		<label>Map Image, AI Trained on GPU</label>
-		<canvas id='gpu'></canvas>
+		<canvas id='gpu' width='256px' height='256px'></canvas>
 	</div>
 	<script src='model.js'></script>
 </body>
